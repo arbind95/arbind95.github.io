@@ -4,94 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Arbind Agrahari Baniya</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        section {
-            padding: 2rem;
+            background: #f4f4f4;
         }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
-        .about, .cv, .research, .contact {
-            background-color: #ecf0f1;
-            margin: 2rem 0;
-            padding: 1.5rem;
-            border-radius: 8px;
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
         }
-        .about h2, .cv h2, .research h2, .contact h2 {
-            color: #2c3e50;
-            margin-top: 0;
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
         }
-        .about p, .cv p, .research p, .contact p {
-            line-height: 1.6;
+        header ul {
+            padding: 0;
+            list-style: none;
         }
-        .research img {
-            max-width: 100%;
-            height: auto;
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('https://github.com/arbind95/arbind95.github.io/blob/main/internship.jpg') no-repeat 0 -400px;
+            text-align: center;
+            color: #ffffff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #about, #education, #experience, #publications, #skills, #awards {
+            padding: 20px;
+            background: #ffffff;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #35424a;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Dr. Arbind Agrahari Baniya</h1>
-        <p>AI and Deep Learning Specialist</p>
+        <div class="container">
+            <div id="branding">
+                <h1>Dr. Arbind Agrahari Baniya</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="about">
+    <section id="showcase">
         <div class="container">
-            <h2>About</h2>
-            <p>Dr. Arbind Agrahari Baniya is an emerging AI and deep learning specialist with an experienced foundation in data-driven smart solutions, research innovation, and commercialisation. He holds a PhD in Information Technology from Deakin University, with a focus on computer vision and deep learning, particularly in the super-resolution of conventional and emerging videos using deep learning.</p>
-            <p>Dr. Agrahari Baniya has collaborative experience leading multi-organisational projects, particularly in the agricultural technology sector, where he applies AI/ML and data science solutions for Victorian apiary and horticulture industries. In his current role as a System Development Researcher at the Department of Energy, Environment and Climate Action (DEECA), Dr. Agrahari Baniya continues to lead the design, development, and delivery of co-invested data & AI/ML projects, managing big data infrastructures, developing new proposals, supervising PhD and Masters researchers, and pursuing research innovation and commercialisation opportunities.</p>
-            <p>Throughout his career, Dr. Agrahari Baniya has contributed significantly to academia and industry with numerous publications and has been actively involved in professional and educational roles, including teaching, reviewing for prestigious journals, and participating in various conference committees. His work has earned him several scholarships and awards, reflecting his dedication and expertise in his field. He remains committed to advancing applied AI/ML projects, employing emerging generative AI paradigms for data-centric solutions, and driving multidisciplinary projects that lead to meaningful outcomes in shaping the AI industry landscape.</p>
+            <h1>AI and Deep Learning Specialist</h1>
+            <p>Innovative Data-driven Smart Solutions</p>
         </div>
     </section>
 
-    <section class="cv">
-        <div class="container">
-            <h2>Curriculum Vitae</h2>
-            <p><strong>PhD:</strong> Information Technology, Deakin University</p>
-            <p><strong>MIT:</strong> Professional, Deakin University</p>
-            <p><strong>BTech:</strong> Computer Science and Engineering, Jawaharlal Nehru Technological University</p>
-            <p><strong>Current Position:</strong> System Development Researcher, DEECA</p>
-            <!-- Add more details from the CV as needed -->
-        </div>
+    <section id="about" class="container">
+        <h2>About</h2>
+        <p>Dr Arbind Agrahari Baniya is an emerging AI and deep learning specialist with an experienced foundation in data-driven smart solutions, research innovation, and commercialisation. He holds a PhD in Information Technology from Deakin University, with a focus on computer vision and deep learning, particularly in the super-resolution of conventional and emerging videos using deep learning.</p>
+        <p>Dr Agrahari Baniya has collaborative experience leading multi-organisational projects, particularly in the agricultural technology sector, where he applies AI/ML and data science solutions for Victorian apiary and horticulture industries. In his current role as a System Development Researcher at the Department of Energy, Environment and Climate Action (DEECA), Dr Agrahari Baniya continues to lead the design, development, and delivery of co-invested data & AI/ML projects, managing big data infrastructures, developing new proposals, supervising PhD and Masters researchers, and pursuing research innovation and commercialisation opportunities.</p>
+        <p>Throughout his career, Dr Agrahari Baniya has contributed significantly to academia and industry with numerous publications and has been actively involved in professional and educational roles, including teaching, reviewing for prestigious journals, and participating in various conference committees. His work has earned him several scholarships and awards, reflecting his dedication and expertise in his field. He remains committed to advancing applied AI/ML projects, employing emerging generative AI paradigms for data-centric solutions, and driving multidisciplinary projects that lead to meaningful outcomes in shaping the AI industry landscape.</p>
     </section>
 
-    <section class="research">
-        <div class="container">
-            <h2>Research Interests</h2>
-            <p>Artificial Intelligence, Machine Learning, Deep Learning, Video/Image Signal Processing, Computer Vision, Agriculture Technology, Big Data Management, Cloud Infrastructure, Software Engineering</p>
-            <h3>Recent Publications</h3>
-            <!-- Add a list of recent publications from the CV -->
-            <img src="1708566354042.jpg" alt="Research Image 1">
-            <img src="internship.jpg" alt="Research Image 2">
-        </div>
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <ul>
+            <li>Doctor of Philosophy Information Technology (Computer Vision and Deep Learning Focus) - Deakin University, 2020 – 2023</li>
+            <li>Master of Information Technology (Professional) (Machine Learning Focus) - Deakin University, 2017 – 2019</li>
+            <li>Bachelor of Technology (Computer Science and Engineering) - Jawaharlal Nehru Technological University Kakinada (JNTUK) India, 2013 – 2017</li>
+        </ul>
     </section>
 
-    <section class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: a.agraharibaniya@gmail.com</p>
-            <p>Phone: +61416002680</p>
-            <p>Location: Heidelberg Heights, Melbourne</p>
-        </div>
+    <section id="experience" class="container">
+        <h2>Professional Experience</h2>
+        <ul>
+            <li>Systems Development Researcher - DEECA, Jul 2023 – Present</li>
+            <li>Senior Officer (Acting) - DEECA, Jan 2024 – Jan 2024</li>
+            <li>Data Analyst - Department of Jobs Skills Industry and Regions (DJSIR), Apr 2023 – Jun 2023</li>
+            <li>Visiting PhD Candidate - DJSIR, Oct 2022 – Apr 2023</li>
+            <li>Research Fellow - Centre for Regional and Rural Futures (CeRRF), Feb 2020 - Jan 2021</li>
+            <li>Research Assistant - School of IT, Deakin University, Jun 2019 - Sep 2019</li>
+            <li>Sessional Academic - School of IT, Deakin University, Mar 2019 – Present</li>
+        </ul>
     </section>
+
+    <section id="publications" class="container">
+        <h2>Publications</h2>
+        <ul>
+            <li>Agrahari Baniya A., et al., "Requirements Framework for Engineering Human-centered Artificial Intelligence-Based Software Systems," Applied Soft Computing, 2023.</li>
+            <li>Agrahari Baniya A., et al., "Current State Data Requirements and Generative AI Solution for Learning-based Computer Vision in Horticulture," Information Processing in Agriculture, 2023.</li>
+            <li>Williams S.R., et al., "A Data Ecosystem for Orchard Research and Early Fruit Traceability," Horticulturae, 2023.</li>
+            <li>And many more...</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>Numerical and Image/Video Data Processing</li>
+            <li>Programming: Python, C++, JavaScript</li>
+            <li>High-Performance Computing, Cloud Computing</li>
+            <li>Project Design and Delivery</li>
+        </ul>
+    </section>
+
+    <section id="awards" class="container">
+        <h2>Honors and Awards</h2>
+        <ul>
+            <li>Industry Start-up Scholarship, Deakin University</li>
+            <li>Best Research Presentation Award at 2021 School of IT HDR Conference</li>
+            <li>Deakin International Meritorious Scholarship</li>
+            <li>COMPEX Nepal Scholarship by Education Council of India</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact: a.agraharibaniya@gmail.com | Phone: +61416002680</p>
+        <p>&copy; 2024 Dr. Arbind Agrahari Baniya. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
